@@ -1,0 +1,178 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar--height:60px;
+}
+
+/* Navigation Bar */
+#navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+z-index: -1;
+}
+/* Navigation Bar: List Styling */
+#navbar ul{
+    font-family: 'Baloo Bhai', 'cursive';
+display:flex ;
+}
+#navbar ul li{
+    list-style: none;
+font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 1px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+   color: rgb(0, 102, 255);
+   background-color: white;
+}
+
+/* Navigation Bar: logo and images */
+#logo {
+ 
+    margin: 14px 20px
+}
+#logo img{
+height: 80px;
+
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 40px 250px;
+    height: 331px;
+    color: white;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+#home::before{
+    content: "";
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background:url("../pics/bg1.jpg") no-repeat center center/cover;
+z-index: -1;
+}
+
+/* Services Selection  */
+#services{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 90px;
+} 
+#serv{
+    display: flex;
+    
+    
+}
+.services1{
+    font-family: 'Baloo Bhai', 'cursive';
+    font-size: 2.5rem;
+    text-align: center;
+}
+#services .box{
+    margin: 15px;
+    padding: 21px;
+    border: 3px solid rgb(0, 38, 255);
+    border-radius: 10px;
+}
+#services .box img{
+    height: 95px;
+    /* display: block; */
+    margin: auto;
+
+}
+/* Cients Section  */
+#allimgs{
+    align-items: center;
+    display: flex;
+
+    justify-content: center;
+}
+.imgs img{
+  height: 150px;
+}
+.imgs{
+    padding: 30px;
+}
+#sec::before{
+    content: "";
+    position: absolute;
+    background: url("../pics/bg2.jpg") no-repeat center center/cover;
+    z-index: -1;
+    height: 40%;
+    width: 100%;
+    opacity: 0.4;
+}
+/* Contact Section  */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("../pics/bg3.jpg") no-repeat center center/cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+#cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+    font-family: 'Bree Serif', serif;
+}
+#cont input,
+#cont textarea{
+    width: 330px;
+    padding: 3px;
+    display: block;
+    border-radius: 6px;
+}
+
+footer{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Utility Classes */
+.btn{
+    margin: 20px 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid red;
+    background-color:yellow ;
+    cursor: pointer;
+}

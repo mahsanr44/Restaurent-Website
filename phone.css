@@ -1,0 +1,44 @@
+#navbar{
+    flex-direction: column;
+}
+#home{
+    height: 520px;
+}
+ul{
+    align-items: center;
+    text-align: center;
+}
+#home::before{
+    height: 1000px;
+    width: 400%;
+}
+#allimgs{
+    flex-wrap: wrap;
+}
+.order{
+    font-size: 16px;
+}
+#sec::before{
+    height: 110%;
+    width: 161%;
+}
+#services .box {
+    margin: 1px;}
+    #services .box img {
+        height: 44px;}
+        p{
+            font-size: 7px;
+        }
+        #contact::before {
+width: 140%;
+        }
+        #cont input, #cont textarea {
+            width: 180px;}
+            footer {
+                padding: 44px;
+                height: -10000px;
+                background-color: blue;
+                width: 132%;}
+#serv{
+    flex-direction: column;
+}
